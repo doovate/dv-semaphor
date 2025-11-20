@@ -11,7 +11,7 @@ services:
             - semaphore_network
     semaphore:
         ports:
-            - "3000:3000"
+            - "4000:3000"
         depends_on:
             - postgres
         image: public.ecr.aws/semaphore/pro/server:v2.16.43
