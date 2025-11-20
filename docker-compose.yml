@@ -38,8 +38,3 @@ volumes:
     semaphore_postgres:
 networks:
     semaphore_network: {driver: "bridge"}
-
-
-    semaphore_postgres:
-networks:
-    semaphore_network: {driver: "bridge"}
