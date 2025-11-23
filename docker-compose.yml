@@ -34,6 +34,7 @@ services:
             - semaphore_tmp:/tmp/semaphore
         networks:
             - semaphore_network
+        restart: unless-stopped
 volumes:
     semaphore_data:
     semaphore_config:
