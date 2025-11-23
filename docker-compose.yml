@@ -11,7 +11,9 @@ services:
         networks:
             - semaphore_network
     semaphore:
-        image: public.ecr.aws/semaphore/pro/server:v2.16.43
+        build:
+          context: .
+#        image: public.ecr.aws/semaphore/pro/server:v2.16.43
         container_name: semaphore
         ports:
             - "4000:3000"
